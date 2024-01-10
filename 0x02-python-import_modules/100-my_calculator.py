@@ -14,6 +14,8 @@ if __name__ == "__main__":
     a = int(sys.argv[1])
     b = int(sys.argv[3])
 
+    from calculator_1 import sub, mul, add, div
+
     if op == '+':
         print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
     elif op == '-':
