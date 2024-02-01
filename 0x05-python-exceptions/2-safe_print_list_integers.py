@@ -5,12 +5,11 @@ def safe_print_list_integers(my_list=[], x=0):
     n = 0
     for n in range(x)
         try:
-            for n in range(0, x):
-                print('{:d}'.format(my_list[n]), end='')
-                item += 1
-            except (ValueError, TypeError):
-                continue
-            except IndexError:
-                break
+            print('{:d}'.format(my_list[n]), end='')
+            item += 1
+        except (ValueError, TypeError):
+            continue
+        except IndexError:
+            break
         print()
         return item
