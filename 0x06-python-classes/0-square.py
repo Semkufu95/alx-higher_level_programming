@@ -3,5 +3,5 @@
 class Square:
     pass
 
-mySquare = Square()
-print(mySquare)
+my_square = Square()
+print(my_square)
