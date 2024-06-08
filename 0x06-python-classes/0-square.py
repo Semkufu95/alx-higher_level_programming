@@ -2,3 +2,6 @@
 
 class Square:
     pass
+
+mySquare = Square()
+print(mySquare)
