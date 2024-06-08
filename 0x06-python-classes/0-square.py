@@ -2,7 +2,7 @@
 '''A module for square'''
 
 class Square:
-''' Defines a square'''
+    ''' Defines a square'''
     pass
 
 my_square = Square()
