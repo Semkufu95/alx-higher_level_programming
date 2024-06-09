@@ -2,6 +2,7 @@
 
 '''Pass a module here'''
 
+
 class Square:
     def __init__(self, size):
         """Initiate size of square.
