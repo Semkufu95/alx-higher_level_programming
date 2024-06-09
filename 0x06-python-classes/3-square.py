@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 '''Import module or define the class'''
 
 
@@ -15,4 +16,5 @@ class Square:
         self.__size = size
 
     def area(self):
+        ''' public instance method to define area'''
         return(self.__size ** 2)
