@@ -7,9 +7,10 @@ class Square:
 
     '''Represents a square'''
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         '''initiates the sizes of square'''
         self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -27,15 +28,15 @@ class Square:
 
     @property
     def position(self):
-        return slf.position
+        return self.position
 
     @position.setter
     def position(self, value):
-        if (not ininstance(value, tuple) or len(value) != 2 or
-                not all(ininstance(i, int) for i in value) or
-                not all(ininstance(i >= 0) for i in value)):
+        if (not isinstance(value, tuple) or len(value) != 2 or
+                not all(isinstance(i, int) for i in value) or
+                not all(i >= 0 for i in value)):
             raise TypeError('position must be a tuple of 2 positive integers')
-            self.__position = value
+        self.__position = value
         
     def area(self):
         ''' returns the area of square'''
