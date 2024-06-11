@@ -9,9 +9,9 @@ class SinglyLinkedList:
         '''initiates the singly linked list'''
         self.__head = None
 
-        def __str__(self):
-            result = []
-            current = self.__head
+    def __str__(self):
+        result = []
+        current = self.__head
         while current is not None:
             result.append(str(current))
             current = current.next_node
@@ -46,8 +46,9 @@ class Node:
     @data.setter
     def data(self, value):
         ''' sets a new value to a node '''
-        if not ininstance(value, int):
+        if not isinstance(value, int):
             raise TypeError('data must be an integer')
+        self.__data = value
 
     @property
     def next_node(self):
@@ -57,5 +58,6 @@ class Node:
     @next_node.setter
     def next_node(self, value):
         '''sets e new next node'''
-        if next_node is not None or not ininstance(next_node, Node):
+        if value is not None and not isinstance(value, Node):
             raise TypeError('next_node must be a Node object')
+        self.__next_node = value
