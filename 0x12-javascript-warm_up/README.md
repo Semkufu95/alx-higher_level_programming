@@ -1,0 +1,1 @@
+This is a directory that serves as a warm up and introduction to Javascript syntax and examples on data types and variables
