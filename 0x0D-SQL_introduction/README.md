@@ -1,0 +1,1 @@
+This directory has tasks of project 0x0D-SQL_introduction
