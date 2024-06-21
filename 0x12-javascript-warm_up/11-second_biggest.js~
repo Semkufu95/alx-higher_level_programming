@@ -1,0 +1,27 @@
+#!/usr/bin/node
+function findSecondBiggest(args) {
+    if (args.length <= 1) {
+        console.log(0);
+        return;
+
+
+    let numbers = args.map(Number);
+    let firstBiggest = -Infinity;
+    let secondBiggest = -Infinity;
+
+    for (let num of numbers) {
+        if (num > firstBiggest) {
+            secondBiggest = firstBiggest;
+            firstBiggest = num;
+        } else if (num > secondBiggest && num < firstBiggest) {
+            secondBiggest = num;
+        }
+    }
+	if (secondBiggest === -Infinity) {
+	    console.log(0);
+	} else {
+	console.log(secondBiggest);
+	}
+    }
+}
+findSecondBiggest(process.argv.slice(2));
