@@ -1,0 +1,1 @@
+This is a directory containing Python scripts and the test files of Objeect Relational Mapping, i.e Linking python with MySQL via DB-API
