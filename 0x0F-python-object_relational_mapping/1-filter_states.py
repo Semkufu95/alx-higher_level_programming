@@ -16,8 +16,8 @@ if __name__ == '__main__':
     db_cursor = db.cursor()
     # Execute query to fetch data
     db_cursor.execute(
-        'SELECT * FROM states WHERE name LIKE "%N%" ORDER BY states.id ASC; '
-    )
+        '''SELECT * FROM states WHERE name
+        LIKE BINARY "%N%" ORDER BY states.id ASC''')
     # fetch all data
     result = db_cursor.fetchall()
     # print the data through iteration
