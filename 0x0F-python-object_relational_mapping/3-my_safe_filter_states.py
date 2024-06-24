@@ -16,7 +16,7 @@ if __name__ == '__main__':
     # Create a cursor and execute the query
     my_cursor = db.cursor()
     my_cursor.execute(
-        'SELECT * FROM states WHERE name = s% ORDER BY id', (argv[4], ))
+        'SELECT * FROM states WHERE name = %s ORDER BY id', (argv[4], ))
     result = my_cursor.fetchall()
     # Reiterate and print results
     for line in result:
