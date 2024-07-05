@@ -1,3 +1,3 @@
 #!/bin/bash
-#  Takess in URLand sends GET request
+#Takes in URL and sends GET request
 curl -sL '$1'
