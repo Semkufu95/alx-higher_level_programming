@@ -1,0 +1,1 @@
+This is a directory that contain bash scripts used to solve Alx tasks on network automation
