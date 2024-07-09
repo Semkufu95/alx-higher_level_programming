@@ -1,0 +1,1 @@
+This is a directory that has alx tasks on understanding a python package requests.
