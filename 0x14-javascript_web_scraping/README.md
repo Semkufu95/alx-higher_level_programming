@@ -1,0 +1,1 @@
+This directory contains js codes on the implementation of javascript to perfom web scraping
