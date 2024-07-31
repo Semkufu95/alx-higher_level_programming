@@ -2,8 +2,7 @@
 
 def safe_print_list_integers(my_list=[], x=0):
     item = 0
-    n = 0
-    for n in range(x)
+    for n in range(0, x)
         try:
             print('{:d}'.format(my_list[n]), end='')
             item += 1
