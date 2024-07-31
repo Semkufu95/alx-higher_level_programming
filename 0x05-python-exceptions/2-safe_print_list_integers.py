@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-
 def safe_print_list_integers(my_list=[], x=0):
     item = 0
-    for n in range(0, x)
+    n = 0
+    for k in my_list:
         try:
-            print('{:d}'.format(my_list[n]), end='')
+            if (item >= x):
+                break
+            print("{:d}".format(k), end="")
             item += 1
         except (ValueError, TypeError):
-            continue
-        print()
-        return item
+            n += 1
+    if (item+n < x):
+        raise IndexError("list index out of range")
+    print("".format())
+    return item
