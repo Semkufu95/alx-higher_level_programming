@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This command adds global variable in all js files as a first line
+
+for file in *.js; do sed -i '1i /* global $ */' "$file"; done
