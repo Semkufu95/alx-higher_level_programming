@@ -1,0 +1,1 @@
+This directory contains codes to solve alx tasks on js jquery
