@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-# A script that takes and sends request to the URL and displays value ID
+"""using urllib to send requests"""
 
-from urllib import request
 import sys
+from urllib import request
 
 if __name__ == "__main__":
+    # get the URL from the command line argument
     url = sys.argv[1]
 
+    # Make a GET request to the URL
     with request.urlopen(url) as response:
         print(dict(response.headers).get("X-Request-Id"))

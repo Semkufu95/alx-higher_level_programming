@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# A script that accepts emal as arg, sends request passed
+''' A script that accepts emal as arg, sends request passed '''
 
 import urllib.request
 import urllib.parse
