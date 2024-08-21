@@ -10,7 +10,7 @@ if __name__ == '__main__':
     email = sys.argv[2]
 
     data = urllib.parse.urlencode(email)
-    data = data.encode('ascii') # data should be bytes
+    data = data.encode('ascii')  # data should be bytes
     req = urllib.request.Request(url, data)
     with urllib.request.urlopen(req) as response:
         body = response.read()
