@@ -1,0 +1,1 @@
+This directory contains task solved from ALX project 0x0A python inheritance
